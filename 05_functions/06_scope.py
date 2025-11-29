@@ -1,0 +1,21 @@
+def serve_chai():
+    chai_type = "masala chai"
+    print(f"inside funtion {chai_type}")
+
+chai_type = "Lemon"
+serve_chai()
+print(f"Outside function: {chai_type}")
+
+
+
+def chai_counter():
+    chai_order = "lemon"
+    def print_order():
+        chai_order = "Ginger"
+        print(f"Inner: {chai_order}")
+    print_order()
+    print(f"Outer: {chai_order}")
+
+chai_order = "tulsi"
+chai_counter()
+print(f"Global: {chai_order}")
